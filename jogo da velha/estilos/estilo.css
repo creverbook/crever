@@ -1,0 +1,146 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+#main{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font:60px sans-serif;
+    display: flex;
+    
+}
+.tab{
+    display: block;
+    width: 100px;
+    height: 80px;
+    background-color:#ffffff;
+    border-style: solid;
+    border-width:2px ;
+    text-align: center;
+    padding-top:20px ;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background: rgba(50, 200, 400, 0.452);
+    margin: auto;
+}
+
+#t1, #t2, #t3{
+    border-top: 0px;
+    
+}
+
+#t1, #t4, #t7{
+    border-left: 0px;
+}
+
+#t7, #t8, #t9{
+    border-bottom: 0px;
+}
+
+#t3, #t6, #t9{
+    border-right: 0px;
+}
+
+.test{
+    display: flex;
+}
+
+
+h2{
+    color: rgb(185, 132, 34);
+    font-size: 50px;
+    font-family: "Papyrus","Lucida Console", "Courier New", monospace;
+}
+
+.placar{
+    width: 300px;
+    background-color: rgba(13, 13, 14, 0.692);
+    margin-left: 40px ;
+    padding-top:15px ;
+}
+
+.player{
+    background-color: white ;
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    margin-left: 15px;
+    text-align: center;
+}
+
+#player1 , #player2{
+    color: rgb(181, 11, 248);
+    padding-top: 10px;
+    font-size: 50px;
+}
+ 
+#resultado{
+    display: flex;
+    font-size: 20px;
+    padding: 30px;
+    text-align: center;
+}
+
+#reset{
+    margin-top: 10px;
+    border: none;
+    outline: none;
+    border-radius:10px ;
+    box-shadow: none;
+    padding: 10px;
+    font-size: 20px;
+    background-color: yellow;
+
+}
+
+#reset:hover{
+    color: black;
+    border: none;
+    background-color: rgb(104, 100, 100);
+}
+#victoria{
+    display: none;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-color: rgb(0, 0, 0, .9);
+    font-size: 50px;
+    color: white;
+    flex-direction: column;
+}
+
+@media(max-width:730px){
+    .placar{
+        width: 100%;
+        margin-left: 0px;
+        
+    }
+    .bottom{
+        margin-top: 0px ;
+        margin-bottom: 15px ;
+    }
+    #main{
+        
+        display: block
+    }
+    #tabuleiro{
+        padding-top: 0px ;
+        padding-bottom:10px ;
+        
+    }
+    #victoria{
+        font-size: 40px;
+    }
+}
+
